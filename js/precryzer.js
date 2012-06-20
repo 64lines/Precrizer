@@ -72,7 +72,7 @@ function convertToHtmlFields() {
     for(var i = 0; i < fields.length; i++){
         var booLast = i == fields.length-1
         var field = fields[i].replace(" ", "");
-        var labelField = field[0].toUpperCase();
+        var labelField = field ? field[0].toUpperCase() : "";
         labelField += field.substr(1, field.length).toLowerCase();
 
         fieldHtmlCode += "\t\t<tr>\n";        
