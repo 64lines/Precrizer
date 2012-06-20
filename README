@@ -9,6 +9,6 @@ It's work with only 3 parameters
 
 It's going to generate:
 * Jquery submit function with ajax call
-* HTML From with submit funcion
+* HTML form with submit funcion
 * Django view called from ajax call
 * Django Url
