@@ -1,0 +1,14 @@
+Precrizer
+
+Easy Django code, HTML Template and JavaScript generator
+
+It's work with only 3 parameters
+* Object fields separated by commas
+* Form Id name
+* Object Django name
+
+It's going to generate:
+* Jquery submit function with ajax call
+* HTML From with submit funcion
+* Django view called from ajax call
+* Django Url
