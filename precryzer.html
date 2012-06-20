@@ -1,0 +1,101 @@
+<html>
+<head>
+<style>
+    body {
+        background: grey;
+    }
+    textarea {
+        border-radius: 5px;
+        color: #ccc;
+        width: 100%; 
+        height: 200px;
+        background: #555;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: "Ubuntu", "Arial"
+    }
+    b {
+        color: #fff;
+        font-family: "Ubuntu", "Arial";
+    }
+    input[type="text"] {
+        border-radius: 5px;
+        background: #fff;
+        border: 1px #CCC;
+        height: 22px;
+        margin-left: 8px;
+    }
+    input[type="submit"] {
+        padding: 5px;
+        padding: 8px;
+        border-radius: 16px;
+        color: #fff;
+        background: #00aaff;
+        border: 1px white;
+        font-family: "Ubuntu", "Arial"
+    }
+    h2 {
+        color: #fff;
+        font-family: "Ubuntu", "Arial"
+    }
+    #formGenerateJqueryAjax {
+        padding-top: 20px;
+    }
+</style>
+<script src="js/jquery-1.7.2.min.js" language="javascript"></script>
+<script src="js/precryzer.js"></script>
+</head>
+</body>
+    <h2>Pre<font color="#00aaff">cry</font>zer</h2>
+    <b>Easy Django code, HTML templates and JavaScript generator.</b>
+    <form id="formGenerateJqueryAjax">
+        <table>
+            <tr>
+                <td><b>Fields</b></td>
+                <td><input type="text" id="inputFields" placeholder="Fiels separated by comma (,)"></td>
+            </tr>
+            <!--
+            <tr>
+                <td><b>Service name</b></td>
+                <td>
+                     <input type="text" id="serviceName" placeholder="/save_users/">
+                </td>
+            </tr>
+            -->
+            <tr>
+                 <td><b>Form Id</b></td>
+                 <td>
+                     <input type="text" id="formId" placeholder="formUsersId">
+                 </td>
+            </tr>
+            <tr>
+                  <td><b>Object</b></td>
+                  <td><input type="text" id="objectName" placeholder="Poll">
+</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Generate">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="generatedResult">
+        <b>JavaScript</b>
+        <textarea disabled="disabled" id="javascript">
+        </textarea>
+       
+        <b>HTML</b>
+        <textarea disabled="disabled" id="html">
+        </textarea>
+
+        <b>Django view</b>
+        <textarea disabled="disabled" id="django">
+        </textarea>
+
+        <b>Django url</b>
+        <textarea disabled="disabled" id="urls">
+        </textarea>
+    </div>
+</body>
+</html>
